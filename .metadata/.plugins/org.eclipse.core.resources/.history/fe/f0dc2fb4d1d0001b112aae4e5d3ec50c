@@ -1,0 +1,43 @@
+package helper;
+
+import utils.UrlGenerator;
+
+import java.util.Arrays;
+
+import com.google.gson.JsonObject;
+
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+import utils.Constants;
+import utils.RestUtils;
+
+public class NeedleNineUtils extends RestUtils {
+
+	UrlGenerator url;
+	Response response;
+	RestUtils restutils = new RestUtils(Constants.folder);
+
+	public NeedleNineUtils() {
+		super(Constants.folder);
+	}
+
+	public int checkStatusCode(String uri) {
+		response = restutils.get(uri);
+		return response.getStatusCode();
+	}
+
+	public int checkAuthStatusCode(String uri) {
+		response = restutils.getAuthStatus(uri);
+		
+		JsonObject json = new JsonObject(response.LOC_UUID);
+		Arrays.asList(response); //api_token
+		return response.getStatusCode();
+	}
+
+	public int getStatus(String uri) {
+		Response response = restutils.getStatusAuth(uri);
+//		  Arrays.asList(response.getHeaders());
+		return response.getStatusCode();
+	}
+
+}

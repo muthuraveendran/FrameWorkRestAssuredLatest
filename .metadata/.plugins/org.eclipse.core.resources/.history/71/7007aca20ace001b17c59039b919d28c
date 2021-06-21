@@ -1,0 +1,25 @@
+package TestSuite;
+
+import org.testng.annotations.Test;
+
+import helper.NeedleNineUtils;
+import utils.Constants;
+
+public class StatusCode {
+	NeedleNineUtils needleNineUtils = new NeedleNineUtils();
+	
+//	@Test
+//	public void loginPage() {
+//		needleNineUtils.checkStatusCode(Constants.login);
+// 	};
+ 	
+	//@Test
+ 	public void AfterloginPage() {
+		needleNineUtils.checkAuthStatusCode(Constants.loginData);
+ 	};
+ 	
+ 	@Test
+ 	public void coursePage() {
+		needleNineUtils.checkStatusCode(Constants.course);
+ 	};
+};

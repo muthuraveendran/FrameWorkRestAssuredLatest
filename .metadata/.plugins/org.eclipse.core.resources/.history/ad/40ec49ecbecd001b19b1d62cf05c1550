@@ -1,0 +1,23 @@
+package TestSuite;
+
+import org.testng.annotations.Test;
+
+import helper.NeedleNineUtils;
+import utils.Constants;
+
+public class Status {
+	NeedleNineUtils needleNineUtils = new NeedleNineUtils();
+	
+	@Test
+	public void loginPage() {
+		String env = System.getProperty("user");
+		System.out.println("envenvenvenvenvenvenvenvenvenvenv",env);
+		needleNineUtils.checkStatusCode(Constants.login);
+ 	};
+// 	
+// 	@Test
+//	public void coursePage() {
+//		needleNineUtils.checkAuthStatusCode(Constants.course);
+// 	}
+
+};

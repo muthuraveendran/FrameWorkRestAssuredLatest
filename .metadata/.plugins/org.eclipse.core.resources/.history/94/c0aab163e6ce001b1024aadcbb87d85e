@@ -1,0 +1,35 @@
+package TestSuite;
+
+import static org.testng.Assert.assertEquals;
+
+import org.testng.annotations.Test;
+
+import helper.NeedleNineUtils;
+import utils.Constants;
+
+public class StatusCode {
+	NeedleNineUtils needleNineUtils = new NeedleNineUtils();
+	
+	@Test
+	public void loginPage() {
+		needleNineUtils.checkStatusCode(Constants.login);
+ 	};
+ 	
+	@Test
+ 	public void AfterloginPage() {
+		needleNineUtils.checkAuthStatusCode(Constants.loginData);
+		assertEquals(false, false);
+ 	};
+ 	
+ 	@Test
+ 	public void coursePage() {
+		needleNineUtils.getStatus(Constants.course);
+ 	};
+ 	
+ 	@Test
+ 	public void schedulePage() {
+		needleNineUtils.getStatus(Constants.schedule);
+ 	};
+ 	
+ 	
+};

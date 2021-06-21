@@ -1,0 +1,22 @@
+package utils;
+
+public class Constants {
+	
+//	public static String login="/data1";
+	public static String login="/";
+	public static String loginData="/user/login";
+	public static String course="/course/coursemaster";
+	public static String folder ="resources/environment";
+	public static String devenv ="dev";
+	public static String qaenv ="qa";
+	public static String baseUrl ="url";
+	public static String contentType ="Content-Type";
+	public static String application ="application/json";
+	public static String apitoken ="apitoken";
+	public static String apitokenValue ="bb2fe8cf9f12e1c884411c60d0d4ad29";
+	public static String location_uuid ="application/json";
+	public static String location_uuidValue ="68df640d-4a66-11eb-ae95-02437e2e875a";
+
+
+
+}

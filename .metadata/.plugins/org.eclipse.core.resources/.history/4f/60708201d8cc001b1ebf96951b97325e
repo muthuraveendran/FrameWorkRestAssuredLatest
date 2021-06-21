@@ -1,0 +1,12 @@
+package utils;
+
+public class Constants {
+	
+	public static String login="/data1";
+	public static String folder ="resources";
+	public static String devenv ="dev";
+	public static String devenv ="url";
+
+
+
+}

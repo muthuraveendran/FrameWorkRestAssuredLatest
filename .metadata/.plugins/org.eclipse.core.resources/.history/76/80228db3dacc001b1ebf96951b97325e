@@ -1,0 +1,6 @@
+package utils;
+
+public class Data {
+	public static String Status200 =200;
+
+}

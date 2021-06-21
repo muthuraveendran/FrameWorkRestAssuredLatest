@@ -1,0 +1,15 @@
+package utils;
+
+public class Constants {
+	
+//	public static String login="/data1";
+	public static String login="/";
+	public static String folder ="resources";
+	public static String devenv ="dev";
+	public static String baseUrl ="url";
+	public static String contentType ="Content-Type";
+	public static String application ="application/json";
+
+
+
+}

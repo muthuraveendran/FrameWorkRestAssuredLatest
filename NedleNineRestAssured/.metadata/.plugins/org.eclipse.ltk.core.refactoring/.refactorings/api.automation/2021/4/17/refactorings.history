@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;api.automation&apos;&#x0D;&#x0A;- Original project: &apos;api.automation&apos;&#x0D;&#x0A;- Original element: &apos;api.automation/src/main/java/NeedleNinie.api.automation&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;NeedleNinie.api.automation" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;NeedleNinie.api" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;NeedleNinie" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1619243988598" subPackages="false" version="1.0"/>
+</session>
